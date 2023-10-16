@@ -13,5 +13,5 @@ const toggleBtn =document.querySelector('.search')
 
             toggleBtnIcon.classList = isOpen
                 ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
+                : 'fa-solid fa-magnifying-glass'
         }
