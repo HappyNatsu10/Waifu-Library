@@ -107,7 +107,7 @@ header {
 
 .drop_search-bar {
     position: absolute;
-    top: 140%;
+    top: 9%;
     left: 15%;
     display: flex;
     z-index: 5;
@@ -188,15 +188,83 @@ nav a h4{
 .imag {
     margin: 1.8rem auto;
     width: 90%;
-    height: auto;
+    height: 202px;
     border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+ .imag .slider {
+    max-width: 88vw;
+    height: inherit;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.item {
+    height: 202px;
 }
 
 .imag img {
-    border-radius: inherit;
+    border-radius: 10px;
+    max-width: 88vw;
+    object-fit: contain;
+
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
     width: 100%;
-    
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active {
+    width: 30px;
 }
 
 .content {
@@ -305,6 +373,20 @@ nav a h4{
     .search-bar input {
         width: 300px;
     }
+
+    .imag {
+        height: 150px;
+    
+    }
+    
+    .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dots li {
+        margin: 10px;
+    }
 }
 
 @media (max-width: 1013px) {
@@ -322,8 +404,23 @@ nav a h4{
         gap: 20px;
     }
 
-    .search {
-        display: block;
+    
+    .content-list {
+        width: 30%;
+    }
+
+    .imag {
+        height: 130px;
+    
+    }
+    
+    .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .dots li {
+        margin: 10px;
     }
 }
 
@@ -332,13 +429,17 @@ nav a h4{
         display: none;
     }
 
-    .drop_search-bar input {
+    /* .search {
+        display: block;
+    } */
+
+    /* .drop_search-bar input {
         display: block;
     }
 
     .drop_search-bar button {
         display: block;
-    }
+    } */
 
     nav {
         gap: 15px;
@@ -360,13 +461,91 @@ nav a h4{
     }
 
     .content-list {
-        width: 100%;
+        width: 47%;
+    }
+
+    .descript h3 {
+        font-size: 19px;
+    }
+
+    .descript p {
+        font-size: 15px;
+    }
+    
+    .imag {
+        height: 120px;
+    
+    }
+    
+    .buttons button {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dots li {
+        margin: 10px;
     }
 
     
+}
 
+@media (max-width: 670px){
 
-
+    .imag {
+        height: 100px;
     
+    }
+    
+    .buttons button {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .dots li {
+        width: 7px;
+        height: 7px;
+        margin: 7px;
+    }
+
+}
+
+@media (max-width: 505px){
+
+    .imag {
+        height: 80px;
+    
+    }
+    
+    .buttons button {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .dots li {
+        width: 5px;
+        height: 5px;
+        margin: 5px;
+    }
+
+}
+
+@media (max-width: 425px){
+
+    .imag {
+        height: 70px;
+    
+    }
+    
+    .buttons button {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .dots li {
+        width: 5px;
+        height: 5px;
+        margin: 5px;
+    }
+
 }
 
